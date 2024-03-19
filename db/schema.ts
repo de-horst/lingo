@@ -19,7 +19,7 @@ export const userProgress = pgTable("userprogress", {
     onDelete: "cascade",
   }),
   hearts: integer("hearts").notNull().default(5),
-  points: integer("points").notNull().default(5),
+  points: integer("points").notNull().default(0),
 });
 
 export const userProgressRelations = relations(userProgress, ({ one }) => ({
