@@ -61,3 +61,4 @@ export const Footer = ({ onCheck, status, disabled, lessonId }: Props) => {
     </footer>
   );
 };
+
